@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="421.0" prefWidth="579.0" style="-fx-background-color: #263238#263238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainServerFormController">
+   <children>
+      <Label layoutX="160.0" layoutY="-1.0" prefHeight="64.0" prefWidth="214.0" text="Server Status" textFill="#ebe5e5">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Separator layoutY="90.0" prefHeight="5.0" prefWidth="579.0" />
+      <TextArea fx:id="messagebox" editable="false" layoutX="22.0" layoutY="101.0" prefHeight="273.0" prefWidth="535.0" />
+      <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/icon/logo.png" />
+         </image></ImageView>
+      <Label fx:id="lblstatus" layoutX="186.0" layoutY="47.0" prefHeight="31.0" prefWidth="185.0" text="Server Is Started" textFill="#00cd26">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblconnection" layoutX="57.0" layoutY="71.0" prefHeight="17.0" prefWidth="503.0" textFill="#08ff29">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

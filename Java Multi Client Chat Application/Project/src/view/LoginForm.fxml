@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="489.0" prefWidth="312.0" style="-fx-background-color: #263238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Pane fx:id="singuppane" prefHeight="489.0" prefWidth="312.0" style="-fx-background-color: #263238;">
+         <children>
+            <TextField fx:id="txtfullname" layoutX="41.0" layoutY="61.0" prefHeight="31.0" prefWidth="248.0" promptText="Full Name" stylesheets="@../assert/icon/style/style.css" />
+            <TextField fx:id="txtregusername" layoutX="41.0" layoutY="101.0" prefHeight="31.0" prefWidth="248.0" promptText="UserName" stylesheets="@../assert/icon/style/style.css" />
+            <TextField fx:id="txtemail" layoutX="41.0" layoutY="191.0" prefHeight="31.0" prefWidth="248.0" promptText="Email" stylesheets="@../assert/icon/style/style.css" />
+            <TextField fx:id="txtphonenumber" layoutX="41.0" layoutY="236.0" prefHeight="31.0" prefWidth="248.0" promptText="Phone Number" stylesheets="@../assert/icon/style/style.css" />
+            <PasswordField fx:id="txtregpassword" layoutX="41.0" layoutY="145.0" prefHeight="31.0" prefWidth="248.0" promptText="Password" stylesheets="@../assert/icon/style/style.css" />
+            <Label layoutX="90.0" layoutY="7.0" text="Sing Up" textFill="#f8eded">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblwarning" alignment="CENTER" layoutY="295.0" prefHeight="17.0" prefWidth="312.0" text="Enter All necessary Information" textFill="#ee0707">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button layoutX="73.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnCreateAnAccountOnAction" prefHeight="21.0" prefWidth="158.0" style="-fx-background-radius: 90;" stylesheets="@../assert/icon/style/style.css" text="Create an Account">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="8.0" layoutY="16.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/icon/go_back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Button layoutX="103.0" layoutY="434.0" mnemonicParsing="false" onAction="#btnloginHereOnAction" prefHeight="31.0" prefWidth="113.0" style="-fx-background-radius: 90;" stylesheets="@../assert/icon/style/style.css" text="Log in Here">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="401.0" prefHeight="36.0" prefWidth="237.0" text="Already have an Account?" textFill="#ddd4d4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblconform1" layoutX="64.0" layoutY="307.0" prefHeight="28.0" prefWidth="200.0" text="Registration Successful" textFill="#0eed07">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblconform2" layoutX="79.0" layoutY="335.0" prefHeight="19.0" prefWidth="158.0" text="Please,go back and  log in!" textFill="#07ed19">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radiomale" layoutX="84.0" layoutY="272.0" mnemonicParsing="false" text="Male" textFill="#f2eaea">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radiofemale" layoutX="164.0" layoutY="273.0" mnemonicParsing="false" text="Female" textFill="#f8f0f0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Pane fx:id="loginpane" layoutX="-1.0" prefHeight="489.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="116.0" layoutX="97.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/icon/messsage.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="63.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnloginOnAction" prefHeight="41.0" prefWidth="207.0" style="-fx-background-radius: 90;" text="Log In">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnsingUp" layoutX="94.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnSingUpOnAction" prefHeight="37.0" prefWidth="140.0" style="-fx-background-radius: 90;" text="Sing Up">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="97.0" layoutY="99.0" text="Log In" textFill="#e4dfdf">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="367.0" text="Dont't Have an Account" textFill="#e4dfdf">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="14.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/icon/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="14.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/icon/secure.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtusername" layoutX="67.0" layoutY="164.0" prefHeight="31.0" prefWidth="207.0" promptText="UserName" />
+            <PasswordField fx:id="txtpassword" layoutX="67.0" layoutY="215.0" prefHeight="31.0" prefWidth="207.0" promptText="Password" />
+            <Label fx:id="lblloginwarning" alignment="CENTER" layoutX="1.0" layoutY="248.0" prefHeight="17.0" prefWidth="312.0" text="Invalid Username or Password" textFill="#da1111">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

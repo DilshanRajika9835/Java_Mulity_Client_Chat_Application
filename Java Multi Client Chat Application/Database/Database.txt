@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS ChatApplication;
+Create Database ChatApplication ;
+USE ChatApplication;
+
+CREATE TABLE ClientDetail(
+FullName varchar(50)NOT NULL,
+UserName  varchar(50)NOT NULL,
+PassWord  varchar(50)NOT NULL,
+Email  varchar(50)NOT NULL,
+PhoneNumber  varchar(50)NOT NULL,
+Gender  varchar(10)NOT NULL,
+Profile  varchar(400),
+CONSTRAINT PRIMARY KEY(PhoneNumber)
+);
+create table Emoji(
+code int(100) auto_Increment,
+EmojieType varchar(50)NOT NULL,
+CONSTRAINT PRIMARY KEY(code)
+);

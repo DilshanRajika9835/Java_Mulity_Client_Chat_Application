@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Notepad">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/Notepad.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/AnimateFX-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/mysql-connector-java-8.0.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/jfoenix-8.0.7 .jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
